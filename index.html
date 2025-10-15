@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Profile Scam Detection Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-shield-alt"></i> Dating Profile Scam Detection Checklist</h1>
+            <p class="subtitle">Systematic evaluation tool to identify potential dating profile scams</p>
+        </header>
+
+        <div class="score-display">
+            <div class="current-score">
+                <span class="score-label">Current Score:</span>
+                <span class="score-value" id="currentScore">0</span>
+                <span class="score-total">/ 50</span>
+            </div>
+            <div class="risk-level" id="riskLevel">
+                <span class="risk-badge low">Low Risk</span>
+            </div>
+        </div>
+
+        <div class="checklist-container">
+            <!-- Profile Red Flags Section -->
+            <div class="section">
+                <h2><i class="fas fa-user"></i> Profile Red Flags</h2>
+                <div class="checklist-items">
+                    <div class="checklist-item" data-points="3">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Professional model-quality photos that seem too perfect
+                            <span class="points">(3 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="2">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Limited number of photos (1-3 images only)
+                            <span class="points">(2 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="3">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Photos appear to be stock images or stolen from social media
+                            <span class="points">(3 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="2">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Profile created very recently (within last few weeks)
+                            <span class="points">(2 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="1">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Minimal or vague profile information
+                            <span class="points">(1 pt)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="2">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Claims to be traveling, deployed military, or working abroad
+                            <span class="points">(2 pts)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conversation Red Flags Section -->
+            <div class="section">
+                <h2><i class="fas fa-comments"></i> Conversation Red Flags</h2>
+                <div class="checklist-items">
+                    <div class="checklist-item" data-points="2">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Immediately wants to move conversation off dating platform
+                            <span class="points">(2 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="3">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Professes love or strong feelings unusually quickly
+                            <span class="points">(3 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="2">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Poor grammar, spelling, or uses unusual phrases
+                            <span class="points">(2 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="3">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Avoids phone calls or video chats with various excuses
+                            <span class="points">(3 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="2">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Stories don't add up or details change between conversations
+                            <span class="points">(2 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="3">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Creates emotional emergencies or crisis situations
+                            <span class="points">(3 pts)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Red Flags Section -->
+            <div class="section critical">
+                <h2><i class="fas fa-exclamation-triangle"></i> Financial Red Flags (Critical)</h2>
+                <div class="checklist-items">
+                    <div class="checklist-item" data-points="5">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Directly asks for money, loans, or financial assistance
+                            <span class="points critical">(5 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="4">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Requests gift cards, wire transfers, or cryptocurrency
+                            <span class="points critical">(4 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="4">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Asks for personal financial information or account details
+                            <span class="points critical">(4 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="3">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Wants to send you money or packages (advance fee scam setup)
+                            <span class="points critical">(3 pts)</span>
+                        </label>
+                    </div>
+                    <div class="checklist-item" data-points="4">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="scam-checkbox">
+                            <span class="checkmark"></span>
+                            Claims to need money for travel to meet you
+                            <span class="points critical">(4 pts)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="risk-assessment">
+            <h3>Risk Assessment Guidelines</h3>
+            <div class="risk-levels">
+                <div class="risk-item low">
+                    <span class="risk-score">0-3 points</span>
+                    <span class="risk-description">Low Risk - Proceed with normal caution</span>
+                </div>
+                <div class="risk-item moderate">
+                    <span class="risk-score">4-7 points</span>
+                    <span class="risk-description">Moderate Risk - Increased vigilance needed</span>
+                </div>
+                <div class="risk-item high">
+                    <span class="risk-score">8-12 points</span>
+                    <span class="risk-description">High Risk - Strong scam indicators present</span>
+                </div>
+                <div class="risk-item extreme">
+                    <span class="risk-score">13+ points</span>
+                    <span class="risk-description">Extreme Risk - Immediate blocking recommended</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="resetButton" class="btn btn-secondary">Reset Checklist</button>
+            <button id="shareButton" class="btn btn-primary">Share Results</button>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-info-circle"></i> Trust your instincts. When in doubt, end the conversation and block the profile.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
